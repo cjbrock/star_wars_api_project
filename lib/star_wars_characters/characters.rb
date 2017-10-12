@@ -16,4 +16,20 @@ class StarWarsCharacters::Characters
     @gender = gender
     @@all << self
   end
+
+  def self.all
+    @@all
+  end
+
+  def self.find(char)
+    self.all[char-1]
+  end
+
+  def gender
+    @gender
+  end
+
+  def homeworld
+    @homeworld
+  end
 end

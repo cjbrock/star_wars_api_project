@@ -1,7 +1,0 @@
-Project structure:
-
- - Grab list of 10 characters from the API, loop through and set each to their own character instance
-- initialize with character data
-- Show users a list of top 10 characters
-- Get character selection from the user
-- display data based on character selection
