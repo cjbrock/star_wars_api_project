@@ -19,7 +19,7 @@ class StarWarsCharacters::CLI
       goodbye
     else
       its = input.to_i
-      if its != 0
+      if its != 0 && its <= StarWarsCharacters::Characters.all.size
         char_input = StarWarsCharacters::Characters.find(its)
         character_details(char_input)
         puts "Would you like to see information for another character?"
